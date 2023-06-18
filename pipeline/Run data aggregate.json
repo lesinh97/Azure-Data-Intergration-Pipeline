@@ -1,0 +1,47 @@
+{
+	"name": "Run data aggregate",
+	"properties": {
+		"activities": [
+			{
+				"name": "DF Aggregate Data",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "DF Aggregate Data",
+						"type": "DataFlowReference",
+						"parameters": {
+							"fiscalyear": {
+								"value": "2020",
+								"type": "Expression"
+							}
+						}
+					},
+					"staging": {
+						"linkedService": {
+							"referenceName": "adl2_linked",
+							"type": "LinkedServiceReference"
+						},
+						"folderPath": "sinhld2container/dirstaging"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-06-18T07:12:12Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

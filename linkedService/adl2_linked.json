@@ -1,0 +1,12 @@
+{
+	"name": "adl2_linked",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://adl2nycparoll.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDRCRDQ3NDhGLUREMzAtNDEzNC1COUZGLTQ1RUJGMDZGMDkzM180NThlNDViMy0zZWQ2LTQ3ODctOTk2MS1iYjg3OGU4NjA3ZjIiDQp9"
+		}
+	}
+}

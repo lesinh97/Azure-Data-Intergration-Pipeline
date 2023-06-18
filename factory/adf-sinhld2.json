@@ -1,0 +1,9 @@
+{
+	"name": "adf-sinhld2",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ef2dc62f-9651-4d5c-a510-a285d8cd1fbe",
+		"tenantId": "f36fdc61-fea3-4e71-a158-17dbb2b1f8d1"
+	}
+}
